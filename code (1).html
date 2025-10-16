@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbusstore</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .featured h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+        }
+
+        .book {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .book h3 {
+            margin: 0.5em 0;
+            color: #333;
+        }
+
+        .book p {
+            margin: 0.5em 0;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Barbusstore</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>  <!-- Note: If this is no longer a bookstore, you might want to update these links, e.g., to "Products" -->
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Featured Items</h2>  <!-- Updated from "Featured Books" to "Featured Items" for generality, in case it's not a bookstore anymore -->
+            <div class="book-grid">
+                <!-- Item 1 -->
+                <div class="book">
+                    <img src="https://via.placeholder.com/200x300?text=Item+1" alt="Item 1 Cover">
+                    <h3>The Great Gatsby</h3>
+                    <p>By F. Scott Fitzgerald</p>
+                    <p>$12.99</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="book">
+                    <img src="https://via.placeholder.com/200x300?text=Item+2" alt="Item 2 Cover">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>By Harper Lee</p>
+                    <p>$10.99</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="book">
+                    <img src="https://via.placeholder.com/200x300?text=Item+3" alt="Item 3 Cover">
+                    <h3>1984</h3>
+                    <p>By George Orwell</p>
+                    <p>$9.99</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="book">
+                    <img src="https://via.placeholder.com/200x300?text=Item+4" alt="Item 4 Cover">
+                    <h3>Pride and Prejudice</h3>
+                    <p>By Jane Austen</p>
+                    <p>$11.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Barbusstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
